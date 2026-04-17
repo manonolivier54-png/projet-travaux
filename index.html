@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -26,7 +26,7 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; max-width: 100%; overflow-x: hidden; }
 
   body {
     font-family: 'Jost', sans-serif;
@@ -1016,7 +1016,7 @@
     .hamburger { display: flex; }
 
     .hero { grid-template-columns: 1fr; height: auto; min-height: 100vh; }
-    .hero-right { min-height: 45vh; }
+    .hero-right { min-height: 40vh; width: 100%; max-width: 100%; }
     .hero-left { padding: 120px 24px 60px; min-height: 55vh; }
     .hero-logo-wrap { 
       width: 200px; height: 200px;
@@ -1323,8 +1323,8 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <div style="height:60px; width:60px; border-radius:50%; background:#3d4a32; box-shadow:0 3px 16px rgba(0,0,0,0.55); overflow:hidden; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-      <img src="logo-rond.png" alt="Projet Travaux" style="width:130%; height:130%; object-fit:cover; display:block; margin-top:-4px;">
+    <div style="height:200px; width:200px; border-radius:50%; background:#3d4a32; box-shadow:0 3px 16px rgba(0,0,0,0.55); overflow:hidden; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+      <img src="logo-rond.png" alt="Projet Travaux" style="width:130%; height:130%; object-fit:cover; display:block; margin-top:-10px;">
     </div>
   </a>
   <div class="nav-links">
@@ -1609,7 +1609,7 @@
 <footer>
   <div class="footer-brand">
     <div style="height:200px; width:200px; border-radius:50%; background:#3d4a32; box-shadow:0 3px 16px rgba(0,0,0,0.45); overflow:hidden; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-      <img src="logo-rond.png" alt="Projet Travaux" style="width:130%; height:130%; object-fit:cover; display:block; margin-top:-4px;">
+      <img src="logo-rond.png" alt="Projet Travaux" style="width:130%; height:130%; object-fit:cover; display:block; margin-top:-10px;">
     </div>
   </div>
   <p class="footer-copy">© 2025 Projet Travaux — Tous droits réservés</p>
